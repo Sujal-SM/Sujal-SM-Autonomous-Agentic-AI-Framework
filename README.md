@@ -135,27 +135,64 @@ agentic_quality_curve_final.png
 
 ---
 
-## 🛠️ Setup Instructions
+# Complete Repository Structure
 
-### 1️⃣ Clone the Repository
+The repository contains the following structure:
 
-```bash
-git clone https://github.com/sujal-SM/agentic-ai-framework.git
-cd agentic-ai-framework
 ```
-### Create Virtual Environment
-```bash
-python -m venv venv
-source venv/bin/activate      # Mac/Linux
-venv\Scripts\activate         # Windows
-```
-### Setup Environment Variables
-```bash
-Create a .env file:
-
-OPENAI_API_KEY=your_api_key_here
+Sujal-SM-Autonomous-Agentic-AI-Framework/
+├── docs/
+│   ├── ...
+├── src/
+│   ├── ...
+├── tests/
+│   ├── ...
+├── README.md
+└── requirements.txt
 ```
 
+# Workflow Flowchart
+
+The workflow of the project can be visualized as follows:
+
+```mermaid
+graph TD;
+    A[Start] --> B{Decision}
+    B -->|Yes| C[Task 1]
+    B -->|No| D[Task 2]
+    C --> E[End]
+    D --> E[End]
+```
+
+# Enhanced Git Clone & Setup
+
+To clone the repository and set up the project environment, follow these steps:
+
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/Sujal-SM/Sujal-SM-Autonomous-Agentic-AI-Framework.git
+   cd Sujal-SM-Autonomous-Agentic-AI-Framework
+   ```
+
+2. **Set up a virtual environment**:
+   For Python projects, it's recommended to use a virtual environment:
+   ```bash
+   python -m venv venv
+   source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+   ```
+
+3. **Install dependencies**:
+   Install the required packages using pip:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+4. **Run the project**:
+   Start the application with the command:
+   ```bash
+   python main.py  # Replace with the appropriate entry point
+   ```
+   
 📜 License
 
 This project is licensed under the MIT License.
