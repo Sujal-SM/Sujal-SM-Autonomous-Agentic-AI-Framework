@@ -156,12 +156,24 @@ Sujal-SM-Autonomous-Agentic-AI-Framework/
 The workflow of the project can be visualized as follows:
 
 ```mermaid
-graph TD;
-    A[Start] --> B{Decision}
-    B -->|Yes| C[Task 1]
-    B -->|No| D[Task 2]
-    C --> E[End]
-    D --> E[End]
+graph TD
+    A["🔍 Researcher<br/>Collects COVID-19 Data"]
+    B["✍️ Writer Initial<br/>Generates Report"]
+    C["✓ Verifier<br/>Checks Title & Topic"]
+    D{Title Found?}
+    E["🔧 Rewriter<br/>Adds Missing Title"]
+    F["✨ Refiner<br/>Enhances Report"]
+    G["📊 Analyst<br/>Evaluates Performance"]
+    H["📈 Visualization<br/>Quality Score Graph"]
+    
+    A --> B
+    B --> C
+    C --> D
+    D -->|No| E
+    D -->|Yes| F
+    E --> F
+    F --> G
+    G --> H
 ```
 
 # Enhanced Git Clone & Setup
